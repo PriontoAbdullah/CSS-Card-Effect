@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="Quick-text.css">
     <link rel="stylesheet" type="text/css" href="Service-box-hover.css">
+    <link rel="stylesheet" type="text/css" href="3D-parallax-effect.css">
 
 </head>
 <body>
@@ -38,7 +39,7 @@
         </div>
     </section>
 
-    <!------- Quick Text Card Hover -->
+    <!------- Service Box Hover -->
     <section id="Service-box-hover"> 
         <div class="container-service">
             <div class="box">
@@ -67,6 +68,41 @@
             </div>
         </div>
     </section>
+
+    <!------- 3D parallax effect hover -->
+    <section id="D-parallax-effect"> 
+        <div class="container-3D">
+            <div class="D-box">
+                <div class="imgBx">
+                    <img src="b1.jpg" alt="b1"  width="550px"  height="300px">
+                </div>
+                <div class="contentBx">
+                    <h2>Tilt Box Hover Effect</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos laudantium atque assumenda cupiditate quo nobis.</p>
+                </div>
+            </div>
+            <div class="D-box">
+                <div class="imgBx">
+                    <img src="b2.jpg" alt="b2" width="550px"  height="300px">
+                </div>
+                <div class="contentBx">
+                    <h2>Tilt Box Hover Effect</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos laudantium atque assumenda cupiditate quo nobis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!------- 3D parallax effect hover for JS code-->
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".D-box"), {
+		max: 25,
+		speed: 400
+	});
+
+</script>
 
 </body>
 </html>
